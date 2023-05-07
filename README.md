@@ -1,8 +1,12 @@
+Code for IJCAI 2023 accepted paper---Graph Neural Convection-Diffusion with Heterophily
+
+
+
 To reproduce our results in Table 2:
-First download the dataset in https://github.com/heterophily-submit/HeterophilousDatasets
+<!-- First download the dataset in https://github.com/heterophily-submit/HeterophilousDatasets
 Change the data path in line297 of ./src/data.py to your path of the downloaded datasets
 Download the dataset in https://github.com/SitaoLuan/ACM-GNN/tree/main/new_data
-Then run:
+Then run: -->
 
 python run_GNN_raw.py --dataset amazon-ratings --function belconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 1 --hidden_dim 64 --block constant  
 
