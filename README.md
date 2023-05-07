@@ -1,13 +1,35 @@
-Code for IJCAI 2023 accepted paper---Graph Neural Convection-Diffusion with Heterophily
+# Graph Neural Convection-Diffusion with Heterophily
+
+This repository contains the code for our IJCAI 2023 accepted paper, *Graph Neural Convection-Diffusion with Heterophily*.
+
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Datasets](#datasets)
+- [Reproducing Results](#reproducing-results)
+- [Reference](#reference)
+- [Citation](#citation)
+
+## Requirements
+
+To install the required dependencies, refer to the environment.yaml file
 
 
+## Datasets
 
-To reproduce our results in Table 2:
-<!-- First download the dataset in https://github.com/heterophily-submit/HeterophilousDatasets
-Change the data path in line297 of ./src/data.py to your path of the downloaded datasets
-Download the dataset in https://github.com/SitaoLuan/ACM-GNN/tree/main/new_data
-Then run: -->
+To reproduce our results in Table 2, you first need to download the datasets.
 
+1. Download the datasets from the following repositories:
+    - [HeterophilousDatasets](https://github.com/heterophily-submit/HeterophilousDatasets)
+    - [ACM-GNN/new_data](https://github.com/SitaoLuan/ACM-GNN/tree/main/new_data)
+
+2. Update the data path in line 297 of `./src/data.py` with the path to the downloaded datasets.
+
+## Reproducing Results
+
+To reproduce the results in Table 2, run the following commands:
+
+```bash
 python run_GNN_raw.py --dataset amazon-ratings --function belconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 1 --hidden_dim 64 --block constant  
 
 python run_GNN_raw.py --dataset amazon-ratings --function gatconv --time 1 --epoch 1000 --step_size 0.5 --dropout 0.2 --lr 0.01 --method euler --no_early --random_split --cuda 2 --hidden_dim 64
@@ -24,13 +46,28 @@ python run_GNN_raw.py --dataset roman-empire --function belconv --time 1 --epoch
 
 python run_GNN_raw.py --dataset roman-empire --function gatconv --time 3 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 2 --hidden_dim 64 --block constant --decay 0.001
 
-python run_GNN_raw.py --dataset wiki-cooc --function belconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 1 --hidden_dim 64 --block constant
+python run_GNN_raw.py --dataset wiki-cooc --function belconv --time 1 --epoch
+```
 
-python run_GNN_raw.py --dataset wiki-cooc --function transconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 1 --hidden_dim 64 --block attention --decay 0.001
+## Reference 
 
-python run_GNN_raw.py --dataset workers --function belconv --time 3 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --random_split --cuda 3 --hidden_dim 64 --block attention
+Our code is developed based on the following repo:
+https://github.com/twitter-research/graph-neural-pde
 
-run_GNN_raw.py --dataset workers --function gatconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 2 --hidden_dim 64 --block constant --decay 0.001
 
-for the full parameters used, please refer to ./best_log folder
+
+## Citation
+
+If you find our helpful, consider to cite us:
+```bash
+@inproceedings{zhao2023graph,
+  title={Graph neural convection-diffusion with heterophily},
+  author={Zhao, K. and Kang, Q. and Song, Y. and She, R. and Wang, S. and Tay, W. P.},
+  booktitle={Proc. International Joint Conference on Artificial Intelligence},
+  year={2023},
+  month={Aug},
+  address={Macao, China}
+}
+
+
 
