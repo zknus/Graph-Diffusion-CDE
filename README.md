@@ -15,7 +15,7 @@ This repository contains the code for our IJCAI 2023 accepted paper, *Graph Neur
 To install the required dependencies, refer to the environment.yaml file
 
 
-## Datasets
+<!-- ## Datasets
 
 To reproduce our results in Table 2, you first need to download the datasets.
 
@@ -23,7 +23,7 @@ To reproduce our results in Table 2, you first need to download the datasets.
     - [HeterophilousDatasets](https://github.com/heterophily-submit/HeterophilousDatasets)
     - [ACM-GNN/new_data](https://github.com/SitaoLuan/ACM-GNN/tree/main/new_data)
 
-2. Update the data path in line 297 of `./src/data.py` with the path to the downloaded datasets.
+2. Update the data path in line 297 of `./src/data.py` with the path to the downloaded datasets. -->
 
 ## Reproducing Results
 
