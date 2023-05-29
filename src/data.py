@@ -193,7 +193,7 @@ def get_dataset(opt: dict, data_dir, use_lcc: bool = False, split=0) -> InMemory
     use_lcc = False
   elif ds in ['wiki-cooc', 'roman-empire', 'amazon-ratings', 'minesweeper', 'workers', 'questions']:
     dataset = MyOwnDataset(path, name=ds)
-    data = np.load(os.path.join('/home/ntu/Documents/zk/HeterophilousDatasets/data', f'{ds.replace("-", "_")}.npz'))
+    data = np.load(os.path.join('../HeterophilousDatasets/data', f'{ds.replace("-", "_")}.npz'))
     node_features = torch.tensor(data['node_features'])
     labels = torch.tensor(data['node_labels'])
     edges = torch.tensor(data['edges'])
