@@ -46,7 +46,9 @@ python run_GNN_raw.py --dataset roman-empire --function belconv --time 1 --epoch
 
 python run_GNN_raw.py --dataset roman-empire --function gatconv --time 3 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 2 --hidden_dim 64 --block constant --decay 0.001
 
-python run_GNN_raw.py --dataset wiki-cooc --function belconv --time 1 --epoch
+python run_GNN_raw.py --dataset wiki-cooc --function belconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 1 --hidden_dim 64 --block constant
+
+python run_GNN_raw.py --dataset wiki-cooc --function transconv --time 1 --epoch 1000 --step_size 1 --dropout 0.2 --lr 0.01 --method euler --no_early --cuda 1 --hidden_dim 64 --block attention --decay 0.001
 ```
 
 ## Reference 
