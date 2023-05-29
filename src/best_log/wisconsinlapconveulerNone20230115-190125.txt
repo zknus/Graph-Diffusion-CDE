@@ -1,0 +1,100 @@
+"run_GNN_sweep.py --dataset wisconsin --function lapconv --method euler --no_early --cuda 0 --epoch 600"
+{
+  "test_result": 82.35294117647058,
+  "test_std": 5.333910003425664,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 18.909467649459838,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 16
+}
+{
+  "test_result": 84.90196078431373,
+  "test_std": 3.6208206495332176,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 18.475360369682313,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 32
+}
+{
+  "test_result": 85.09803921568627,
+  "test_std": 4.898037645802665,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 23.430826544761658,
+  "time": 1.5,
+  "step_size": 1,
+  "hidden_dim": 128
+}
+{
+  "test_result": 85.88235294117646,
+  "test_std": 3.594177015651642,
+  "dropout": 0.4,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 16.001456832885744,
+  "time": 1,
+  "step_size": 1,
+  "hidden_dim": 128
+}
+{
+  "test_result": 86.07843137254902,
+  "test_std": 1.849800221971885,
+  "dropout": 0.4,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 35.787513732910156,
+  "time": 1.5,
+  "step_size": 0.2,
+  "hidden_dim": 256
+}
+{
+  "test_result": 86.27450980392157,
+  "test_std": 2.90831313219438,
+  "dropout": 0,
+  "weight_decay": 0.001,
+  "lr": 0.005,
+  "runtime_average": 18.373980784416197,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 64
+}
+{
+  "test_result": 86.47058823529412,
+  "test_std": 4.594264515239208,
+  "dropout": 0.2,
+  "weight_decay": 0.01,
+  "lr": 0.005,
+  "runtime_average": 13.467104196548462,
+  "time": 1.5,
+  "step_size": 1,
+  "hidden_dim": 16
+}
+{
+  "test_result": 87.05882352941177,
+  "test_std": 3.304372460069162,
+  "dropout": 0.4,
+  "weight_decay": 0.01,
+  "lr": 0.005,
+  "runtime_average": 9.68775908946991,
+  "time": 0.5,
+  "step_size": 0.5,
+  "hidden_dim": 32
+}
+{
+  "test_result": 87.45098039215688,
+  "test_std": 4.401949866792872,
+  "dropout": 0.6,
+  "weight_decay": 0.01,
+  "lr": 0.005,
+  "runtime_average": 13.179940152168275,
+  "time": 0.5,
+  "step_size": 0.2,
+  "hidden_dim": 128
+}

@@ -1,0 +1,111 @@
+"run_GNN_sweep.py --dataset cornell --function belconv --method euler --no_early --cuda 2 --epoch 600"
+{
+  "test_result": 77.83783783783784,
+  "test_std": 6.922296472900378,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 5.765610194206237,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 16
+}
+{
+  "test_result": 81.62162162162163,
+  "test_std": 7.2319395460862985,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 5.342220187187195,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 64
+}
+{
+  "test_result": 82.16216216216216,
+  "test_std": 6.751349187457728,
+  "dropout": 0.2,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 44.54893562793732,
+  "time": 0.2,
+  "step_size": 0.5,
+  "hidden_dim": 32
+}
+{
+  "test_result": 82.70270270270268,
+  "test_std": 6.964377690121693,
+  "dropout": 0.4,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 56.194859743118286,
+  "time": 0.2,
+  "step_size": 0.5,
+  "hidden_dim": 256
+}
+{
+  "test_result": 83.24324324324323,
+  "test_std": 4.954135886438745,
+  "dropout": 0.4,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 91.36924576759338,
+  "time": 1,
+  "step_size": 0.2,
+  "hidden_dim": 64
+}
+{
+  "test_result": 83.51351351351352,
+  "test_std": 4.750917792228907,
+  "dropout": 0.4,
+  "weight_decay": 0.001,
+  "lr": 0.005,
+  "runtime_average": 18.978949880599977,
+  "time": 1,
+  "step_size": 0.2,
+  "hidden_dim": 64
+}
+{
+  "test_result": 84.32432432432431,
+  "test_std": 6.139360373838138,
+  "dropout": 0.4,
+  "weight_decay": 0.001,
+  "lr": 0.005,
+  "runtime_average": 9.309138369560241,
+  "time": 1,
+  "step_size": 0.5,
+  "hidden_dim": 256
+}
+{
+  "test_result": 84.59459459459458,
+  "test_std": 6.948627098476995,
+  "dropout": 0.2,
+  "weight_decay": 0.01,
+  "lr": 0.005,
+  "runtime_average": 5.897371053695679,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 128
+}
+{
+  "test_result": 84.86486486486486,
+  "test_std": 6.41856329029077,
+  "dropout": 0.4,
+  "weight_decay": 0.01,
+  "lr": 0.005,
+  "runtime_average": 12.7184077501297,
+  "time": 1.5,
+  "step_size": 0.5,
+  "hidden_dim": 256
+}
+{
+  "test_result": 85.13513513513513,
+  "test_std": 5.952085282579796,
+  "dropout": 0.6,
+  "weight_decay": 0.01,
+  "lr": 0.005,
+  "runtime_average": 33.56719207763672,
+  "time": 1.5,
+  "step_size": 0.2,
+  "hidden_dim": 128
+}

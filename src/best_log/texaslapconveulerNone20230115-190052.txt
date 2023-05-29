@@ -1,0 +1,78 @@
+"run_GNN_sweep.py --dataset texas --function lapconv --method euler --no_early --cuda 3 --epoch 600"
+{
+  "test_result": 80.54054054054055,
+  "test_std": 6.019204716572999,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 9.118959641456604,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 16
+}
+{
+  "test_result": 80.8108108108108,
+  "test_std": 7.875028261801876,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 8.814443945884705,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 32
+}
+{
+  "test_result": 83.78378378378378,
+  "test_std": 3.6260561797293906,
+  "dropout": 0,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 8.797356653213502,
+  "time": 0.2,
+  "step_size": 0.2,
+  "hidden_dim": 64
+}
+{
+  "test_result": 84.32432432432431,
+  "test_std": 4.954135886438749,
+  "dropout": 0.8,
+  "weight_decay": 0.0001,
+  "lr": 0.005,
+  "runtime_average": 24.91836953163147,
+  "time": 0.5,
+  "step_size": 0.2,
+  "hidden_dim": 256
+}
+{
+  "test_result": 85.40540540540539,
+  "test_std": 4.221756581571168,
+  "dropout": 0,
+  "weight_decay": 0.001,
+  "lr": 0.005,
+  "runtime_average": 25.02802336215973,
+  "time": 0.5,
+  "step_size": 0.2,
+  "hidden_dim": 128
+}
+{
+  "test_result": 85.94594594594594,
+  "test_std": 5.51245352820842,
+  "dropout": 0.6,
+  "weight_decay": 0.001,
+  "lr": 0.005,
+  "runtime_average": 22.686385536193846,
+  "time": 0.5,
+  "step_size": 0.2,
+  "hidden_dim": 256
+}
+{
+  "test_result": 86.21621621621621,
+  "test_std": 3.2990690853334352,
+  "dropout": 0.8,
+  "weight_decay": 0.001,
+  "lr": 0.005,
+  "runtime_average": 23.397251343727113,
+  "time": 0.5,
+  "step_size": 0.2,
+  "hidden_dim": 256
+}
