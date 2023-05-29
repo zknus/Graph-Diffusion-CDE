@@ -1,6 +1,6 @@
 # Graph Neural Convection-Diffusion with Heterophily
 
-This repository contains the code for our IJCAI 2023 accepted paper, *Graph Neural Convection-Diffusion with Heterophily*.
+This repository contains the code for our IJCAI 2023 accepted paper, *[Graph Neural Convection-Diffusion with Heterophily](https://arxiv.org/abs/2305.16780)*. 
 
 ## Table of Contents
 
